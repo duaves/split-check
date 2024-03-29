@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    flex-direction: column; 
+}
+
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    color: #031337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content {
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    background: #fefefe;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #031337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+table {
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; 
+}
+
+button {
+    flex: 1; 
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetBtn {
+    background-color: #d12121;
+}
+
+#resetBtn:hover {
+    background-color: #c32121;
+}
+
+button:hover {
+    background-color: #1e4ab9;
+}
+
+input[type="text"],
+input[type="email"],
+button[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 80%;
+    }
+    #userTable {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        width: 90%;
+    }
+    #userTable {
+        width: 50%;
+    }
+}
